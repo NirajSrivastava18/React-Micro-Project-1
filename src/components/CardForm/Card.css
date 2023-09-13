@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Dangrek&family=Delius+Unicase&family=Inter:wght@400;500&family=Poppins&display=swap');
+.container {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 400px;
+  margin-top: 200px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.Card-Holder {
+  color: #404040;
+  font-family: Roboto;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.86px;
+  padding-bottom: 10px;
+}
+
+.name {
+  height: 44px;
+  width: 382px;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.13);
+
+  background: #fff;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.875px;
+}
+.name::placeholder {
+  color: #bbb9bc;
+}
+.Card-Number {
+  color: #404040;
+  font-family: Roboto;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.86px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.Card {
+  height: 44px;
+  width: 382px;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.13);
+  background: #fff;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.875px;
+}
+.Card::placeholder {
+  color: #bbb9bc;
+}
+
+.Card-container {
+  display: flex;
+}
+
+.Card-exp {
+  padding-top: 10px;
+}
+
+.exp-date {
+  color: #404040;
+  font-family: Roboto;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.86px;
+}
+.card-valid input {
+  height: 44px;
+  width: 78px;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.13);
+  margin-top: 10px;
+
+  background: #fff;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.875px;
+}
+.card-valid input::placeholder {
+  color: #bbb9bc;
+}
+.Month {
+  margin-right: 15px;
+}
+
+.Cvc-details {
+  padding-top: 10px;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.CVC {
+  color: #404040;
+  font-family: Roboto;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.86px;
+  padding-bottom: 10px;
+}
+.Cvc-Number {
+  width: 163px;
+  height: 44px;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.13);
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.875px;
+}
+
+.Cvc-Number::placeholder {
+  color: #bbb9bc;
+}
+
+.Submit {
+  margin-top: 30px;
+  width: 395px;
+  height: 53px;
+  border-radius: 6px;
+  background: #220930;
+  color: #fff;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.16px;
+  cursor: pointer;
+}
+
+.error-message {
+  color: #f81212;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+input[type='text'] {
+  padding-left: 10px;
+}
+input[type='Number'] {
+  padding-left: 10px;
+}
+input[type='tel'] {
+  padding-left: 10px;
+}
