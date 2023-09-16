@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import './Card.css';
 
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 const Card = (props) => {
   const [name, setName] = useState('');
   const [cardNumber, setCardNumber] = useState('');
@@ -8,6 +11,19 @@ const Card = (props) => {
   const [year, setYear] = useState('');
   const [cvc, setCvc] = useState('');
   const [error, setError] = useState(false);
+
+  const notify = () => {
+    toast('Card Added Successfully ✅', {
+      position: 'top-center',
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: 'light',
+    });
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -28,6 +44,7 @@ const Card = (props) => {
     } else {
       let data = [name, cardNumber, month, year, cvc];
       props.onChange(data);
+      notify();
     }
     console.log(name, cardNumber, month, year, cvc);
   };
@@ -115,6 +132,7 @@ const Card = (props) => {
           </div>
         </div>
         <button className=" Submit">Confirm</button>
+        <ToastContainer />
       </form>
     </div>
   );
