@@ -1,0 +1,137 @@
+.rectangle {
+  position: absolute;
+  top: 60px;
+  left: 160px;
+  width: 447px;
+  height: 246px;
+  background: linear-gradient(128deg, #623ff2 19.57%, #5e37ec 93.11%);
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+.card-design {
+  filter: blur(47.5px);
+}
+
+.ellipse1 {
+  position: relative;
+  border-radius: 50%;
+  top: 150px;
+  right: 70px;
+  width: 250px;
+  height: 118px;
+  transform: rotate(-34.616deg);
+  background: #6328c0;
+}
+
+.ellipse2 {
+  position: relative;
+  bottom: 250px;
+  left: 220px;
+  border-radius: 50%;
+  background: #ff796d;
+  width: 300.363px;
+  height: 184.802px;
+  transform: rotate(-34.616deg);
+}
+
+.ellipse3 {
+  position: relative;
+  bottom: 100px;
+  left: 130px;
+  width: 230.044px;
+  height: 85.929px;
+  border-radius: 50%;
+  transform: rotate(-45.588deg);
+  background: #cf56bd;
+}
+
+.ellipse4 {
+  position: relative;
+  bottom: 230px;
+  left: 10px;
+  width: 380.921px;
+  height: 142.731px;
+  transform: rotate(-41.78deg);
+  border-radius: 50%;
+  background: #5e90e6;
+}
+
+.ellipse5 {
+  position: relative;
+  bottom: 380px;
+  left: 220px;
+  width: 333.182px;
+  height: 127.662px;
+  transform: rotate(-45.651deg);
+  border-radius: 50%;
+  background: #620594;
+}
+
+.red {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+}
+
+.circle1 {
+  position: relative;
+  bottom: 630px;
+  left: 30px;
+  width: 47px;
+  height: 47px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.circle2 {
+  position: relative;
+  bottom: 660px;
+  left: 100px;
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  background: linear-gradient(128deg, #623ff2 19.57%, #5e37ec 93.11%);
+  border: 1.5px solid #fff;
+}
+
+.card-Number {
+  position: relative;
+  bottom: 580px;
+  left: 38px;
+}
+.card-Number h4 {
+  color: #fff;
+  font-family: Inter;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 4.68px;
+}
+
+.card-Name {
+  position: relative;
+  bottom: 550px;
+  left: 38px;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2.47px;
+}
+
+.card-validation {
+  position: relative;
+  bottom: 568px;
+  left: 350px;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 3.29px;
+}

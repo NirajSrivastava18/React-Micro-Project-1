@@ -1,0 +1,153 @@
+.reactangle2 {
+  position: absolute;
+  bottom: 75px;
+  left: 230px;
+  width: 447px;
+  height: 246px;
+  border-radius: 10px;
+  background: linear-gradient(107deg, #fff 0%, #d9d9d9 103.94%);
+  box-shadow: 10px 11px 62px rgba(0, 0, 0, 0.19);
+  overflow: hidden;
+}
+
+.card-strip {
+  position: absolute;
+  top: 30px;
+  width: 448px;
+  height: 47.138px;
+  background-color: #000;
+}
+
+.cvc-card-number {
+  position: relative;
+  border: 1px solid #fff;
+  top: 99px;
+  left: 40px;
+  width: 361px;
+  height: 34.447px;
+  border-radius: 4px;
+  background: #adb6bf;
+}
+.cvc-card-number h2 {
+  text-align: right;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 3.29px;
+  padding-right: 7px;
+  padding-top: 8px;
+}
+
+.line1 {
+  position: relative;
+  top: 128px;
+  left: 115px;
+  width: 115px;
+  height: 4.533px;
+  border-radius: 4px;
+  background: #aeb5bd;
+}
+.line2 {
+  position: relative;
+  top: 123.5px;
+  left: 238px;
+  width: 22px;
+  height: 4.533px;
+  border-radius: 4px;
+  background: #aeb5bd;
+}
+.line3 {
+  position: relative;
+  top: 118px;
+  left: 269px;
+  width: 22px;
+  height: 4.533px;
+  border-radius: 4px;
+  background: #aeb5bd;
+}
+.line4 {
+  position: relative;
+  top: 113.5px;
+  left: 300px;
+  width: 9px;
+  height: 4.533px;
+  border-radius: 4px;
+  background: #aeb5bd;
+}
+
+.line5 {
+  position: relative;
+  top: 123.5px;
+  left: 128px;
+  width: 22px;
+  height: 4.533px;
+  border-radius: 4px;
+  background: #aeb5bd;
+}
+
+.line6 {
+  position: relative;
+  top: 119px;
+  left: 156px;
+  width: 61px;
+  height: 4.533px;
+  border-radius: 4px;
+  background: #aeb5bd;
+}
+.line7 {
+  position: relative;
+  top: 114px;
+  left: 222px;
+  width: 46px;
+  height: 4.533px;
+  border-radius: 4px;
+  background: #aeb5bd;
+}
+.line8 {
+  position: relative;
+  top: 109.5px;
+  left: 278px;
+  width: 9px;
+  height: 4.533px;
+  border-radius: 4px;
+  background: #aeb5bd;
+}
+.line9 {
+  position: relative;
+  top: 118px;
+  left: 115px;
+  width: 9px;
+  height: 4.533px;
+  border-radius: 4px;
+  background: #aeb5bd;
+}
+.line10 {
+  position: relative;
+  top: 113.5px;
+  left: 132px;
+  width: 22px;
+  height: 4.533px;
+  border-radius: 4px;
+  background: #aeb5bd;
+}
+.line11 {
+  position: relative;
+  top: 109px;
+  left: 162px;
+  width: 21px;
+  height: 4.533px;
+  border-radius: 4px;
+  background: #aeb5bd;
+}
+.line12 {
+  position: relative;
+  top: 104.5px;
+  left: 194px;
+  width: 114px;
+  height: 4.533px;
+  border-radius: 4px;
+  background: #aeb5bd;
+}

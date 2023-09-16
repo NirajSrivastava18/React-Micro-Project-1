@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Card.css';
 
-const Card = () => {
+const Card = (props) => {
   const [name, setName] = useState('');
   const [cardNumber, setCardNumber] = useState('');
   const [month, setMonth] = useState('');
@@ -11,31 +11,35 @@ const Card = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (name.length === 0 || name.length <= 0) {
+
+    if (
+      name.length === 0 ||
+      name.length <= 0 ||
+      cardNumber.length === 0 ||
+      cardNumber.length < 19 ||
+      month.length === 0 ||
+      month.length < 2 ||
+      year.length === 0 ||
+      year.length < 4 ||
+      cvc.length === 0 ||
+      cvc.length < 3
+    ) {
       setError(true);
-    }
-    if (cardNumber.length === 0 || cardNumber.length < 19) {
-      setError(true);
-    }
-    if (month.length === 0 || month.length < 2) {
-      setError(true);
-    }
-    if (year.length === 0 || year.length < 4) {
-      setError(true);
-    }
-    if (cvc.length === 0 || cvc.length < 3) {
-      setError(true);
+    } else {
+      let data = [name, cardNumber, month, year, cvc];
+      props.onChange(data);
     }
     console.log(name, cardNumber, month, year, cvc);
   };
   return (
-    <div className="container">
+    <div className="form-container">
       <form onSubmit={handleSubmit}>
         <label className="Card-Holder">CARDHOLDER NAME</label>
         <input
           type="text"
           className="name"
           placeholder="e.g. Jane Appleseed"
+          value={name}
           onChange={(e) => setName(e.target.value)}
         />
         {error && name.length <= 0 ? (
@@ -82,6 +86,7 @@ const Card = () => {
                 placeholder="YY"
                 maxLength={4}
                 min="2023"
+                value={year}
                 onChange={(e) => setYear(e.target.value)}
               />
             </div>
@@ -99,6 +104,7 @@ const Card = () => {
               placeholder="e.g. 123"
               min="0"
               maxLength={3}
+              value={cvc}
               onChange={(e) => setCvc(e.target.value)}
             />
             {error && cvc.length < 3 ? (

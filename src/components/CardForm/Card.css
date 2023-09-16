@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Dangrek&family=Delius+Unicase&family=Inter:wght@400;500&family=Poppins&display=swap');
-.container {
+.form-container {
   display: flex;
   justify-content: flex-end;
-  margin-right: 400px;
-  margin-top: 200px;
+  position: absolute;
+  right: 300px;
+  top: 200px;
 }
 
 form {
@@ -19,7 +20,7 @@ form {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 1.86px;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
 }
 
 .name {
@@ -48,7 +49,7 @@ form {
   line-height: normal;
   letter-spacing: 1.86px;
   padding-bottom: 10px;
-  padding-top: 10px;
+  padding-top: 15px;
 }
 .Card {
   height: 44px;
@@ -72,7 +73,7 @@ form {
 }
 
 .Card-exp {
-  padding-top: 10px;
+  padding-top: 15px;
 }
 
 .exp-date {
@@ -89,7 +90,7 @@ form {
   width: 78px;
   border-radius: 6px;
   border: 1px solid rgba(0, 0, 0, 0.13);
-  margin-top: 10px;
+  margin-top: 15px;
 
   background: #fff;
   font-family: Inter;
@@ -120,10 +121,11 @@ form {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 1.86px;
-  padding-bottom: 10px;
+  padding-top: 5px;
+  padding-bottom: 15px;
 }
 .Cvc-Number {
-  width: 163px;
+  width: 192px;
   height: 44px;
   border-radius: 6px;
   border: 1px solid rgba(0, 0, 0, 0.13);
