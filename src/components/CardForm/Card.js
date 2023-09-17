@@ -56,7 +56,7 @@ const Card = (props) => {
           type="text"
           className="name"
           placeholder="e.g. Jane Appleseed"
-          value={name}
+          value={name.replace(/[^a-zA-Z]/g, '')}
           onChange={(e) => setName(e.target.value)}
         />
         {error && name.length <= 0 ? (
@@ -72,6 +72,7 @@ const Card = (props) => {
           placeholder="e.g. 1234 5678 9123 0000"
           maxLength={19}
           value={cardNumber
+            .replace(/[^0-9]/g, '')
             .replace(/\s/g, '')
             .replace(/(\d{4})/g, '$1 ')
             .trim()}
@@ -94,7 +95,7 @@ const Card = (props) => {
                 min="1"
                 max="12"
                 maxLength={2}
-                value={month}
+                value={month.replace(/[^0-9]/g, '')}
                 onChange={(e) => setMonth(e.target.value)}
               />
               <input
@@ -103,7 +104,7 @@ const Card = (props) => {
                 placeholder="YY"
                 maxLength={2}
                 min="23"
-                value={year}
+                value={year.replace(/[^0-9]/g, '')}
                 onChange={(e) => setYear(e.target.value)}
               />
             </div>
@@ -121,7 +122,7 @@ const Card = (props) => {
               placeholder="e.g. 123"
               min="0"
               maxLength={3}
-              value={cvc}
+              value={cvc.replace(/[^0-9]/g, '')}
               onChange={(e) => setCvc(e.target.value)}
             />
             {error && cvc.length < 3 ? (
