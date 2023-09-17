@@ -36,7 +36,7 @@ const Card = (props) => {
       month.length === 0 ||
       month.length < 2 ||
       year.length === 0 ||
-      year.length < 4 ||
+      year.length < 2 ||
       cvc.length === 0 ||
       cvc.length < 3
     ) {
@@ -101,13 +101,13 @@ const Card = (props) => {
                 type="tel"
                 className="Year"
                 placeholder="YY"
-                maxLength={4}
-                min="2023"
+                maxLength={2}
+                min="23"
                 value={year}
                 onChange={(e) => setYear(e.target.value)}
               />
             </div>
-            {error && year.length < 4 ? (
+            {error && year.length < 2 ? (
               <label className="error-message"> Month and Year invaild</label>
             ) : (
               ''
